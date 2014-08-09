@@ -1,0 +1,19 @@
+{
+  "name": "ng-annotate-brunch",
+  "version": "1.7.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jarvisaoieong",
+  "license": "MIT",
+  "dependencies": {
+    "ng-annotate": "^0.9.11"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.7.1",
+    "gulp": "^3.8.7",
+    "gulp-coffee": "^2.1.1"
+  }
+}
