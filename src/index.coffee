@@ -6,12 +6,12 @@ module.exports = class NgAnnotateCompiler
   extenstion: 'js'
 
   constructor: (config) ->
-    @pathRegex = config?.plugins?.ng_annotate?.pathRegex
+    @pattern = config?.plugins?.ng_annotate?.pattern
 
   optimize: (params, callback) ->
     {data, path} = params
 
-    if @pathRegex?.test path
+    if @pattern?.test path
       result = ngAnnotate data, add: true
       callback result.errors, result.src
     else

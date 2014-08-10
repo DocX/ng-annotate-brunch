@@ -23,7 +23,7 @@ To specify uglifyjs options, use `config.plugins.ng_annotate` object, for exampl
 config =
   plugins:
     ng_annotate:
-      pathRegex: /app/
+      pattern: /app/
 ```
 
 ## License
