@@ -11,10 +11,7 @@ module.exports = class NgAnnotateCompiler
   optimize: (params, callback) ->
     {data, path} = params
 
-    if @pattern?.test path
-      result = ngAnnotate data, add: true
-      callback result.errors, result.src
-    else
-      callback null, data
+    result = ngAnnotate data, add: true
+    callback result.errors, result.src
 
 
